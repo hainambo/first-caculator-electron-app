@@ -1,0 +1,49 @@
+<!--index.html-->
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <!-- https://developer.mozilla.org/en-US/docs/Web/HTTP/CSP -->
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'">
+    <title>Hello World!</title>
+    <link rel="stylesheet" href="./maytinh.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="screen">
+            <div class="number">0</div>
+        </div>
+        <div class="allbutton">
+            <div class="allbutton__container">
+                <div class="allbutton--item allbutton--item__lightgrey" id="AC">AC</div>
+                <div class="allbutton--item allbutton--item__lightgrey">+/-</div>
+                <div class="allbutton--item allbutton--item__lightgrey">%</div>
+                <div class="allbutton--item allbutton--item__orange button--change" id="change">/</div>
+                <div class="allbutton--item">7</div>
+                <div class="allbutton--item">8</div>
+                <div class="allbutton--item">9</div>
+                <div class="allbutton--item allbutton--item__orange">X</div>
+                <div class="allbutton--item">4</div>
+                <div class="allbutton--item">6</div>
+                <div class="allbutton--item">5</div>
+                <div class="allbutton--item allbutton--item__orange">-</div>
+                <div class="allbutton--item">1</div>
+                <div class="allbutton--item">2</div>
+                <div class="allbutton--item">3</div>
+                <div class="allbutton--item allbutton--item__orange">+</div>
+                <div class="allbutton--item allbutton--item__slots">
+                    <div class="zero">0</div>
+                </div>
+                <div class="allbutton--item">,</div>
+                <div class="allbutton--item allbutton--item__orange">=</div>
+            </div>
+        </div>
+    </div>
+    <script src="./renderer.js"></script>
+    <script src="./maytinh.js"></script>
+</body>
+
+</html>
