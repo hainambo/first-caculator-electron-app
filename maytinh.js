@@ -55,8 +55,8 @@ function highlightButton(e) {
  */
 function equal(e) {
   highlightButton(e);
-  let numberOne = sessionStorage.getItem("numberOne");
-  let numberTwo = sessionStorage.getItem("numberTwo");
+  let numberOne = Number(sessionStorage.getItem("numberOne"));
+  let numberTwo = Number(sessionStorage.getItem("numberTwo"));
   let state = sessionStorage.getItem("state");
   let symbol = sessionStorage.getItem("symbol");
   let result = "0";
@@ -65,16 +65,16 @@ function equal(e) {
     //tính toán
     switch (symbol.toLowerCase()) {
       case "x":
-        result = numberOne * numberTwo;
+        result = numberTwo * numberOne;
         break;
       case "/":
-        result = numberOne / numberTwo;
+        result = numberTwo / numberOne;
         break;
       case "+":
-        result = numberOne + numberTwo;
+        result = numberTwo + numberOne;
         break;
       case "-":
-        result = numberOne - numberTwo;
+        result = numberTwo - numberOne;
         break;
       default:
         break;
